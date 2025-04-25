@@ -85,7 +85,15 @@
       </ul>
     </div>
   </div>
-  <img src="https://visitor-badge.glitch.me/badge?page_id=addyscented.my-site" alt="Visitor count" />
+ <div id="counter">Loading...</div>
+<script>
+fetch('https://api.countapi.xyz/hit/https://addyscented.github.io/my-site/visits')
+  .then(res => res.json())
+  .then(data => {
+    document.getElementById('counter').innerText = `Visitor count: ${data.value}`;
+  });
+</script>
+
 
 </body>
 </html>
