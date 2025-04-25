@@ -58,21 +58,21 @@
     <div class="block">
       <h2>NON-ALGORITHMIC SOCIAL WEB</h2>
       <ul>
-        <li>Are.na</li>
-        <li>Mastadon</li>
+        <li><a href="https://www.are.na/" target="_blank">Are.na</li>
         <li>Your Own Blog</li>
-        <li>Discord/li>
+        <li>Your Own Website</li>
+        <li><a href="https://discord.com/" target="_blank">Discord</li>
       </ul>
     </div>
 
     <div class="block">
       <h2>ANALOG MEDIA</h2>
       <ul>
-        <li>Make a Zine or Book</li>
+        <li><a href="https://mr-matthew.itch.io/one-page-zine-template" target="_blank">Make a Zine or Book</li>
         <li>Throw an Art Show in Your House</li>
         <li>Write your friends letters</li>
         <li>Polaroids & Disposable Cameras</li>
-        <li>Make and unhinged flier or bumper sticker</li>
+        <li>Make and unhinged flier or sticker</li>
       </ul>
     </div>
 
@@ -82,18 +82,25 @@
         <li>ACTUALLY HANG OUT WITH FRIENDS</li>
         <li>Volunteer doing something you actually like</li>
         <li>Share a skill or a resource</li>
-         <li>Answer the call</li>
+        <li>Answer the call</li>
       </ul>
     </div>
   </div>
  <div id="counter">Loading...</div>
-<script>
-fetch('https://api.countapi.xyz/hit/addyscented.github.io/my-site/visits')
+<div id="counter">Loading...</div>
+
+  <script>
+fetch('https://api.countapi.xyz/hit/addyscented/visits')
   .then(res => res.json())
   .then(data => {
     document.getElementById('counter').innerText = `Visitor count: ${data.value}`;
+  })
+  .catch(err => {
+    document.getElementById('counter').innerText = "Unable to load count";
+    console.error(err);
   });
 </script>
+
 
 
 </body>
