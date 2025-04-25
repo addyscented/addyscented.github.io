@@ -87,7 +87,7 @@
   </div>
  <div id="counter">Loading...</div>
 <script>
-fetch('https://api.countapi.xyz/hit/https://addyscented.github.io/my-site/visits')
+fetch('https://api.countapi.xyz/hit/addyscented.github.io/my-site/visits')
   .then(res => res.json())
   .then(data => {
     document.getElementById('counter').innerText = `Visitor count: ${data.value}`;
