@@ -59,6 +59,26 @@ a:hover {
   color: #1702fc; 
   text-decoration: underline;
 }
+    .counter-container {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.counter-container img {
+  width: auto;
+  height: 40px; /* Or any size you want */
+}
+.counter-container img {
+  height: 40px;
+  filter: drop-shadow(0 0 6px #1702fc);
+  transition: transform 0.2s ease;
+}
+
+.counter-container img:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 10px #ff007c);
+}
+
   </style>
   
 </head>
@@ -103,7 +123,10 @@ a:hover {
     </div>
   </div>
 
-<img src="https://vbr.nathanchung.dev/badge?page_id=addyscented.github.io/my-site&color=1702fc&label=visits&style=flat" alt="Visitor count">
+<div class="counter-container">
+  <img src="https://vbr.nathanchung.dev/badge?page_id=addyscented.github.io/my-site&color=1702fc&label=visits&style=flat" alt="Visitor count">
+</div>
+
 
 
 
