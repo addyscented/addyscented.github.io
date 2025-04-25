@@ -104,17 +104,8 @@ a:hover {
   </div>
 <div id="counter">Loading...</div>
 
-  <script>
-fetch('https://api.countapi.xyz/hit/addyscented/visits')
-  .then(res => res.json())
-  .then(data => {
-    document.getElementById('counter').innerText = `Visitor count: ${data.value}`;
-  })
-  .catch(err => {
-    document.getElementById('counter').innerText = "Unable to load count";
-    console.error(err);
-  });
-</script>
+<img src="https://visitor-badge.glitch.me/badge?page_id=addyscented.scrollsend" alt="Visitor count">
+
 
 
 
